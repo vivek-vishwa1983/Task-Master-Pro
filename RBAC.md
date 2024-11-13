@@ -29,6 +29,7 @@ rules:
         - extensions
         - policy
         - rbac.authorization.k8s.io
+        - batch
     resources:
       - pods
       - componentstatuses
@@ -52,6 +53,7 @@ rules:
       - replicationcontrollers
       - serviceaccounts
       - services
+      - cronjobs
     verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 ```
 
@@ -71,7 +73,8 @@ roleRef:
 subjects:
 - namespace: webapps 
   kind: ServiceAccount
-  name: jenkins 
+  name: jenkins
+  namespace: webapps
 ```
 ### Create Cluster role & bind to Service Account
 ```yaml
