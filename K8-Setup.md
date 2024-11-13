@@ -64,4 +64,7 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
 ```
+### 11.Execute join command on node machine
+ execute the command which you get in step7 
 
+Reference Document : https://github.com/DEVOPS-WITH-WEB-DEV/Kubeadm-cluster-setup/blob/main/README.md
