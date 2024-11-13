@@ -76,7 +76,7 @@ subjects:
   name: jenkins
   namespace: webapps
 ```
-### Create Cluster role & bind to Service Account
+### Create Cluster role & bind to Service Account (not required)
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
